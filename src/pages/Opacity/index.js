@@ -1,12 +1,11 @@
 import React from 'react';
-import { Text } from 'react-native';
 
-import { Container } from './styles';
+import { Container, Box } from './styles';
 
 const Opacity = () => {
 	return (
 		<Container>
-			<Text>Opacity</Text>
+			<Box />
 		</Container>
 	);
 };
