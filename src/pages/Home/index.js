@@ -2,13 +2,25 @@ import React from 'react';
 
 import { Container, List, Button, ButtonText } from './styles';
 
+const Pages = [
+	{
+		title: 'Opacity',
+		page: 'Page1',
+	},
+];
+
 const Home = ({ navigation }) => {
 	return (
 		<Container>
 			<List>
-				<Button onPress={() => navigation.navigate('Page1')}>
-					<ButtonText>001. Opacity</ButtonText>
-				</Button>
+				{Pages.map(item => (
+					<Button
+						key={item.page}
+						onPress={() => navigation.navigate(item.page)}
+					>
+						<ButtonText>{item.title}</ButtonText>
+					</Button>
+				))}
 			</List>
 		</Container>
 	);

@@ -11,7 +11,7 @@ const Routes = createStackNavigator(
 		Home: {
 			screen: Home,
 			navigationOptions: {
-				headerTitle: 'Animations',
+				headerTitle: 'Master Animations',
 				headerTintColor: Colors.green,
 				headerStyle: {
 					backgroundColor: Colors.bgColor,
