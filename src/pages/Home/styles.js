@@ -6,9 +6,13 @@ export const Container = styled.View`
 	flex: 1;
 	justify-content: center;
 	align-items: center;
+
+	background-color: #ff6347;
 `;
 
-export const Text = styled.Text``;
+export const ButtonText = styled.Text`
+	color: #fff;
+`;
 
 export const List = styled(ScrollView).attrs({
 	showsVerticalScrollIndicator: false,
@@ -17,7 +21,8 @@ export const List = styled(ScrollView).attrs({
 `;
 
 export const Button = styled(RectButton)`
-	background-color: #ddd;
+	background-color: #db4f36;
+
 	width: 100%;
 
 	padding: 15px;

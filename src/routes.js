@@ -10,6 +10,11 @@ const Routes = createStackNavigator(
 			screen: Home,
 			navigationOptions: {
 				headerTitle: 'Animations',
+				headerTintColor: '#fff',
+				headerStyle: {
+					backgroundColor: '#ff6347',
+					borderBottomWidth: 0,
+				},
 			},
 		},
 		Page1: {
@@ -19,7 +24,7 @@ const Routes = createStackNavigator(
 			},
 		},
 	},
-	{ initialRouteName: 'Page1', mode: 'modal', headerMode: 'float' }
+	{ initialRouteName: 'Home', mode: 'modal', headerMode: 'float' }
 );
 
 export default createAppContainer(Routes);

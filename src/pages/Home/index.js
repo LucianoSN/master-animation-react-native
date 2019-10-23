@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Container, List, Text, Button } from './styles';
+import { Container, List, Button, ButtonText } from './styles';
 
 const Home = ({ navigation }) => {
 	return (
 		<Container>
 			<List>
 				<Button onPress={() => navigation.navigate('Page1')}>
-					<Text>001. Opacity</Text>
+					<ButtonText>001. Opacity</ButtonText>
 				</Button>
 			</List>
 		</Container>
