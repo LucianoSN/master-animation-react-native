@@ -2,16 +2,18 @@ import styled from 'styled-components';
 import { ScrollView } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 
+import { Colors } from '../../styles/Colors';
+
 export const Container = styled.View`
 	flex: 1;
 	justify-content: center;
 	align-items: center;
 
-	background-color: #ff6347;
+	background-color: ${Colors.bgColor};
 `;
 
 export const ButtonText = styled.Text`
-	color: #fff;
+	color: ${Colors.text};
 `;
 
 export const List = styled(ScrollView).attrs({
@@ -21,7 +23,7 @@ export const List = styled(ScrollView).attrs({
 `;
 
 export const Button = styled(RectButton)`
-	background-color: #db4f36;
+	background-color: ${Colors.bgColorLight}
 
 	width: 100%;
 
