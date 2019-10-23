@@ -6,6 +6,7 @@ import { Colors } from './styles/Colors';
 import Home from './pages/Home';
 import Opacity from './pages/Opacity';
 import TranslatePosition from './pages/TranslatePosition';
+import Scale from './pages/Scale';
 
 const Routes = createStackNavigator(
 	{
@@ -31,6 +32,13 @@ const Routes = createStackNavigator(
 			screen: TranslatePosition,
 			navigationOptions: {
 				headerTitle: 'Translate Position',
+				headerTintColor: Colors.pink,
+			},
+		},
+		Page3: {
+			screen: Scale,
+			navigationOptions: {
+				headerTitle: 'Scale',
 				headerTintColor: Colors.pink,
 			},
 		},

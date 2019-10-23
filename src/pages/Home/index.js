@@ -1,17 +1,8 @@
 import React from 'react';
 
-import { Container, List, Button, ButtonText } from './styles';
+import Pages from './data';
 
-const Pages = [
-	{
-		title: 'Opacity',
-		page: 'Page1',
-	},
-	{
-		title: 'Translate Position',
-		page: 'Page2',
-	},
-];
+import { Container, List, Button, ButtonText } from './styles';
 
 const Home = ({ navigation }) => {
 	return (
