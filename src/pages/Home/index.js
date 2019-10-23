@@ -7,6 +7,10 @@ const Pages = [
 		title: 'Opacity',
 		page: 'Page1',
 	},
+	{
+		title: 'Translate Position',
+		page: 'Page2',
+	},
 ];
 
 const Home = ({ navigation }) => {
