@@ -1,6 +1,8 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
+import { Colors } from './styles/Colors';
+
 import Home from './pages/Home';
 import Opacity from './pages/Opacity';
 
@@ -10,9 +12,9 @@ const Routes = createStackNavigator(
 			screen: Home,
 			navigationOptions: {
 				headerTitle: 'Animations',
-				headerTintColor: '#fff',
+				headerTintColor: Colors.green,
 				headerStyle: {
-					backgroundColor: '#ff6347',
+					backgroundColor: Colors.bgColor,
 					borderBottomWidth: 0,
 				},
 			},
@@ -21,6 +23,7 @@ const Routes = createStackNavigator(
 			screen: Opacity,
 			navigationOptions: {
 				headerTitle: 'Opacity',
+				headerTintColor: Colors.pink,
 			},
 		},
 	},
