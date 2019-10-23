@@ -1,11 +1,15 @@
 import React from 'react';
 
-import { Container, Box } from './styles';
+import { startAnimation, animatedStyles } from './animations';
+
+import { Container, Box, Press } from './styles';
 
 const Opacity = () => {
 	return (
 		<Container>
-			<Box />
+			<Press onPress={startAnimation}>
+				<Box style={[animatedStyles]} />
+			</Press>
 		</Container>
 	);
 };
