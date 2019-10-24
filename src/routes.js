@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Opacity from './pages/Opacity';
 import TranslatePosition from './pages/TranslatePosition';
 import Scale from './pages/Scale';
+import WidthHeight from './pages/WidthHeight';
 
 const Routes = createStackNavigator(
 	{
@@ -40,6 +41,13 @@ const Routes = createStackNavigator(
 			navigationOptions: {
 				headerTitle: 'Scale',
 				headerTintColor: Colors.pink,
+			},
+		},
+		Page4: {
+			screen: WidthHeight,
+			navigationOptions: {
+				headerTitle: 'Width Height',
+				headerTintColor: Colors.green,
 			},
 		},
 	},
