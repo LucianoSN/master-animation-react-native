@@ -15,6 +15,10 @@ const Pages = [
 		title: 'Width Height',
 		page: 'Page4',
 	},
+	{
+		title: 'Absolute Position',
+		page: 'Page5',
+	},
 ];
 
 export default Pages;

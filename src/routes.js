@@ -8,6 +8,7 @@ import Opacity from './pages/Opacity';
 import TranslatePosition from './pages/TranslatePosition';
 import Scale from './pages/Scale';
 import WidthHeight from './pages/WidthHeight';
+import AbsolutePosition from './pages/AbsolutePosition';
 
 const Routes = createStackNavigator(
 	{
@@ -47,6 +48,13 @@ const Routes = createStackNavigator(
 			screen: WidthHeight,
 			navigationOptions: {
 				headerTitle: 'Width Height',
+				headerTintColor: Colors.green,
+			},
+		},
+		Page5: {
+			screen: AbsolutePosition,
+			navigationOptions: {
+				headerTitle: 'Absolute Position',
 				headerTintColor: Colors.green,
 			},
 		},
