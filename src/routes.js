@@ -9,6 +9,7 @@ import TranslatePosition from './pages/TranslatePosition';
 import Scale from './pages/Scale';
 import WidthHeight from './pages/WidthHeight';
 import AbsolutePosition from './pages/AbsolutePosition';
+import BackgroundColor from './pages/BackgroundColor';
 
 const Routes = createStackNavigator(
 	{
@@ -56,6 +57,13 @@ const Routes = createStackNavigator(
 			navigationOptions: {
 				headerTitle: 'Absolute Position',
 				headerTintColor: Colors.green,
+			},
+		},
+		Page6: {
+			screen: BackgroundColor,
+			navigationOptions: {
+				headerTitle: 'Background Color',
+				headerTintColor: Colors.bgColor,
 			},
 		},
 	},
