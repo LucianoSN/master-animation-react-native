@@ -13,17 +13,10 @@ const timing = (value, during) => {
 	});
 };
 
-const colorInterpolation = (color1, color2, color3) => {
+const apply = (value1, value2, value3) => {
 	return state.animation.interpolate({
 		inputRange: [0, 0.5, 1],
-		outputRange: [color1, color2, color3],
-	});
-};
-
-const sizeInterpolation = (size1, size2, size3) => {
-	return state.animation.interpolate({
-		inputRange: [0, 0.5, 1],
-		outputRange: [size1, size2, size3],
+		outputRange: [value1, value2, value3],
 	});
 };
 
@@ -32,16 +25,11 @@ const startAnimation = () => {
 };
 
 const bgAnimatedStyles = {
-	backgroundColor: colorInterpolation(
-		Colors.green,
-		Colors.tomato,
-		Colors.bgColor
-	),
+	backgroundColor: apply(Colors.green, Colors.tomato, Colors.bgColor),
 };
 
 const textAnimatedStyles = {
-	color: colorInterpolation(Colors.bgColor, Colors.white, Colors.green),
-	fontSize: sizeInterpolation(24, 50, 12),
+	color: apply(Colors.bgColor, Colors.white, Colors.green),
 };
 
 export { startAnimation, bgAnimatedStyles, textAnimatedStyles };

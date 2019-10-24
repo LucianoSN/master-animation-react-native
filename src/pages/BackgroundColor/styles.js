@@ -8,6 +8,7 @@ export const Container = styled(Animated.View)`
 `;
 
 export const Text = styled(Animated.Text)`
+	font-size: 34px;
 	font-weight: bold;
 `;
 
