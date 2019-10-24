@@ -12,23 +12,27 @@ const timing = (value, during) => {
 	});
 };
 
-const colorInterpolation = (color1, color2) => {
+const colorInterpolation = (color1, color2, color3) => {
 	return state.animation.interpolate({
-		inputRange: [0, 1],
-		outputRange: [color1, color2],
+		inputRange: [0, 0.5, 1],
+		outputRange: [color1, color2, color3],
 	});
 };
 
 const startAnimation = () => {
-	timing(1, 1500).start(() => timing(0, 1500).start());
+	timing(1, 4500).start(() => timing(0, 4500).start());
 };
 
 const bgAnimatedStyles = {
-	backgroundColor: colorInterpolation(Colors.green, Colors.bgColor),
+	backgroundColor: colorInterpolation(
+		Colors.green,
+		Colors.tomato,
+		Colors.bgColor
+	),
 };
 
 const textAnimatedStyles = {
-	color: colorInterpolation(Colors.bgColor, Colors.green),
+	color: colorInterpolation(Colors.bgColor, Colors.white, Colors.green),
 };
 
 export { startAnimation, bgAnimatedStyles, textAnimatedStyles };

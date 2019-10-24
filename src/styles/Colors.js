@@ -3,7 +3,10 @@ export const Colors = {
 	bgColorLight: '#383e49',
 
 	bottomLine: '#b37fd5',
+	text: '#a1a8b5',
+
 	pink: '#ab78cf',
 	green: '#98c379',
-	text: '#a1a8b5',
+	tomato: 'tomato',
+	white: '#ffffff',
 };
