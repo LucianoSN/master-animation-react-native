@@ -10,6 +10,7 @@ import Scale from './pages/Scale';
 import WidthHeight from './pages/WidthHeight';
 import AbsolutePosition from './pages/AbsolutePosition';
 import BackgroundColor from './pages/BackgroundColor';
+import Rotation from './pages/Rotation';
 
 const Routes = createStackNavigator(
 	{
@@ -63,6 +64,13 @@ const Routes = createStackNavigator(
 			screen: BackgroundColor,
 			navigationOptions: {
 				headerTitle: 'Background Color',
+				headerTintColor: Colors.bgColor,
+			},
+		},
+		Page7: {
+			screen: Rotation,
+			navigationOptions: {
+				headerTitle: 'Rotation',
 				headerTintColor: Colors.bgColor,
 			},
 		},

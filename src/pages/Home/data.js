@@ -23,6 +23,10 @@ const Pages = [
 		title: 'Background Color',
 		page: 'Page6',
 	},
+	{
+		title: 'Rotation',
+		page: 'Page7',
+	},
 ];
 
 export default Pages;

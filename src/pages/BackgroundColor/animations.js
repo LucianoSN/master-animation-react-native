@@ -13,7 +13,7 @@ const timing = (value, during) => {
 	});
 };
 
-const apply = (value1, value2, value3) => {
+const colorInterpolate = (value1, value2, value3) => {
 	return state.animation.interpolate({
 		inputRange: [0, 0.5, 1],
 		outputRange: [value1, value2, value3],
@@ -25,11 +25,15 @@ const startAnimation = () => {
 };
 
 const bgAnimatedStyles = {
-	backgroundColor: apply(Colors.green, Colors.tomato, Colors.bgColor),
+	backgroundColor: colorInterpolate(
+		Colors.green,
+		Colors.tomato,
+		Colors.bgColor
+	),
 };
 
 const textAnimatedStyles = {
-	color: apply(Colors.bgColor, Colors.white, Colors.green),
+	color: colorInterpolate(Colors.bgColor, Colors.white, Colors.green),
 };
 
 export { startAnimation, bgAnimatedStyles, textAnimatedStyles };
