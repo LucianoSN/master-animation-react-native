@@ -11,6 +11,8 @@ import WidthHeight from './pages/WidthHeight';
 import AbsolutePosition from './pages/AbsolutePosition';
 import BackgroundColor from './pages/BackgroundColor';
 import Rotation from './pages/Rotation';
+import WidthHeightPercentage from './pages/WidthHeightPercentage';
+import Easing from './pages/Easing';
 
 const Routes = createStackNavigator(
 	{
@@ -71,6 +73,20 @@ const Routes = createStackNavigator(
 			screen: Rotation,
 			navigationOptions: {
 				headerTitle: 'Rotation',
+				headerTintColor: Colors.bgColor,
+			},
+		},
+		Page8: {
+			screen: WidthHeightPercentage,
+			navigationOptions: {
+				headerTitle: 'Width Height Percentage',
+				headerTintColor: Colors.bgColor,
+			},
+		},
+		Page9: {
+			screen: Easing,
+			navigationOptions: {
+				headerTitle: 'Easing',
 				headerTintColor: Colors.bgColor,
 			},
 		},

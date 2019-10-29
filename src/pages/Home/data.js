@@ -27,6 +27,14 @@ const Pages = [
 		title: 'Rotation',
 		page: 'Page7',
 	},
+	{
+		title: 'Width Height Percentage',
+		page: 'Page8',
+	},
+	{
+		title: 'Easing',
+		page: 'Page9',
+	},
 ];
 
 export default Pages;
