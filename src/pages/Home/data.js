@@ -35,6 +35,10 @@ const Pages = [
 		title: 'Easing',
 		page: 'Page9',
 	},
+	{
+		title: 'Spring',
+		page: 'Page10',
+	},
 ];
 
 export default Pages;

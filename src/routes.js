@@ -13,6 +13,7 @@ import BackgroundColor from './pages/BackgroundColor';
 import Rotation from './pages/Rotation';
 import WidthHeightPercentage from './pages/WidthHeightPercentage';
 import Easing from './pages/Easing';
+import Spring from './pages/Spring';
 
 const Routes = createStackNavigator(
 	{
@@ -87,6 +88,13 @@ const Routes = createStackNavigator(
 			screen: Easing,
 			navigationOptions: {
 				headerTitle: 'Easing',
+				headerTintColor: Colors.bgColor,
+			},
+		},
+		Page10: {
+			screen: Spring,
+			navigationOptions: {
+				headerTitle: 'Spring',
 				headerTintColor: Colors.bgColor,
 			},
 		},
