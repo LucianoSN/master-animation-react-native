@@ -14,6 +14,7 @@ import Rotation from './pages/Rotation';
 import WidthHeightPercentage from './pages/WidthHeightPercentage';
 import Easing from './pages/Easing';
 import Spring from './pages/Spring';
+import Loop from './pages/Loop';
 
 const Routes = createStackNavigator(
 	{
@@ -95,6 +96,13 @@ const Routes = createStackNavigator(
 			screen: Spring,
 			navigationOptions: {
 				headerTitle: 'Spring',
+				headerTintColor: Colors.bgColor,
+			},
+		},
+		Page11: {
+			screen: Loop,
+			navigationOptions: {
+				headerTitle: 'Loop',
 				headerTintColor: Colors.bgColor,
 			},
 		},
