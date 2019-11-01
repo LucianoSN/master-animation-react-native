@@ -43,6 +43,10 @@ const Pages = [
 		title: 'Loop',
 		page: 'Page11',
 	},
+	{
+		title: 'Event',
+		page: 'Page12',
+	},
 ];
 
 export default Pages;

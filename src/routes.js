@@ -15,6 +15,7 @@ import WidthHeightPercentage from './pages/WidthHeightPercentage';
 import Easing from './pages/Easing';
 import Spring from './pages/Spring';
 import Loop from './pages/Loop';
+import Event from './pages/Event';
 
 const Routes = createStackNavigator(
 	{
@@ -106,8 +107,15 @@ const Routes = createStackNavigator(
 				headerTintColor: Colors.bgColor,
 			},
 		},
+		Page12: {
+			screen: Event,
+			navigationOptions: {
+				headerTitle: 'Event',
+				headerTintColor: Colors.bgColor,
+			},
+		},
 	},
-	{ initialRouteName: 'Home', mode: 'modal', headerMode: 'float' }
+	{ initialRouteName: 'Page12', mode: 'modal', headerMode: 'float' }
 );
 
 export default createAppContainer(Routes);
