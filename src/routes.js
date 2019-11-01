@@ -115,7 +115,7 @@ const Routes = createStackNavigator(
 			},
 		},
 	},
-	{ initialRouteName: 'Page12', mode: 'modal', headerMode: 'float' }
+	{ initialRouteName: 'Home', mode: 'modal', headerMode: 'float' }
 );
 
 export default createAppContainer(Routes);
