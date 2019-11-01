@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Animated } from 'react-native';
 
+import { Colors } from '../../styles/Colors';
+
 export const Container = styled.View`
 	flex: 1;
 `;

@@ -6,7 +6,13 @@ const state = {
 };
 
 const debug = () => {
-	state.animation.addListener(({ value }) => console.log(value));
+	state.animation.addListener(({ value }) => {
+		console.log(value);
+
+		if (value > 500) {
+			console.log('MAIOR');
+		}
+	});
 };
 
 const backgroundInterpolate = (color1, color2) => {
